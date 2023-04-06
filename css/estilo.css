@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Bitter&family=Lobster&display=swap');
 body{
     background: url("../imagens/4.jpg") no-repeat fixed;
 }
@@ -9,4 +8,70 @@ div#interface{
     background-color: rgba(232, 230, 231, 0.9);
     width: 1100px;
     margin: 0px auto;
+    padding: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+/*comeca configuraçao do cabeçalho(header)*/
+header#titulo{
+    font-family: 'Lobster', cursive, sans-serif;
+    font-size: 17pt;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+header#titulo h1{
+    color: gray;
+    text-shadow: 3px 4px 5px black;
+    text-indent: 180px;
+    word-spacing: 7px;
+}
+
+header#titulo img#logo{
+    top: 20px;
+    left: 40px;
+    position: absolute;
+}
+
+header#titulo nav#menu{
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+header#titulo nav#menu h1{
+    display: none;
+}
+
+header#titulo nav#menu ol{
+    list-style: none;
+    text-transform: uppercase;
+    top: 70px;
+    left: 700px;
+    position: absolute;
+}
+
+header#titulo nav#menu li{
+    display: inline-block;
+    background-color: #ccc9ca;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 2s;
+}
+
+header#titulo nav#menu li:hover{
+    background-color:  gray;
+}
+
+header#titulo nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+
+header#titulo nav#menu a:hover{
+    color: white;
+    text-decoration:  underline;
+}
+/*termina configuraçao do cabeçalho(header)*/
+
