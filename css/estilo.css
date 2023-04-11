@@ -75,3 +75,162 @@ header#titulo nav#menu a:hover{
 }
 /*termina configuraçao do cabeçalho(header)*/
 
+/*começa configuraçao do seçao(section)*/
+section#esquerdo{
+    display: block;
+    width: 350px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-right: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+section#esquerdo article.noticia{
+    font: 10px Arial, sans-serif;
+    text-align: justify;
+}
+
+section#esquerdo article.noticia h2.titulo{
+    font: inherit;
+    background-color: #ccc9ca;
+    padding: 10px;
+    font-weight: bold;
+    font-size: italic;
+    border-radius: 10px;
+}
+
+section#esquerdo article.noticia h2.descricao{
+    font: 8pt Arial, sans-serif;
+    line-height: 15px;
+}
+
+section#meio{
+    display: block;
+    width: 450px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-right: 1px dashed rgba(0, 0, 0, 0.3);
+    height: 700px;
+    overflow-y: hide;
+}
+
+section#meio div.zoom img{
+    border-radius: 15px;
+    width: 250px;
+    height: 150px;
+    height: 1px solid black;
+    left: 100px;
+    position: relative;
+    filter: grayscale(100%);
+    transition: all .6s cubic-bezier(1,1,1,1);
+}
+
+section#meio div.zoom img:hover{
+    filter: sepia(80%);
+    transform: scale(1.5);
+    z-index: 1;
+}
+/*termina configuraçao do seçao(section)*/
+
+/*começa configuraçao da barra lateral(aside)*/
+aside#direito{
+    display: block;
+    width: 250px;
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+aside#direito div.noticia2{
+    border: 1px dashed rgba(0, 0, 0, 0.1);
+    background-color: #e8e8e8;
+    margin-top: 8px;
+}
+
+aside#direito div.noticia2 img{
+    width: 50px;
+    float: right;
+    padding: 15px 5px 1px 2px;
+}
+
+aside#direito div.noticia2 p{
+    font: 10pt Arial sans-serif;
+    text-align: justify;
+    padding: 10px;
+}
+
+aside#direito div.noticia3{
+    border: 1px dashed rgba(0, 0, 0, 0.1);
+    background-color: #d2cbcb;
+    margin-top: 8px;
+}
+
+aside#direito div.noticia3 img{
+    width: 50px;
+    float: right;
+    padding: 15px 5px 1px 2px;
+}
+
+aside#direito div.noticia3 p{
+    font: 10pt Arial sans-serif;
+    text-align: justify;
+    padding: 10px;
+}
+
+/*termina configuraçao do barra lateral(aside)*/
+
+/*começa configuraçao do rodape(footer)*/
+footer#rodape{
+    clear: both;
+    border-top: 1px dashed rgba(0,0,0,0.3);
+    text-align: center;
+    height: 300px;
+}
+
+footer#rodape ol.itemlink{
+    float: left;
+    margin: 5px;
+    width: 100%;
+    padding: 5px;
+    list-style-type: none;
+}
+
+footer#rodape ol.itemlink li{
+    float: left;
+    width: 45%;
+    padding: 5px;
+    display: inline;
+}
+footer#rodape ol.itemlink li a:link{
+    font: 12pt Arial, sans-serif;
+    color: black;
+    font-style: italic;
+}
+footer#rodape ol.itemlink li a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+footer#rodape nav#redes{
+    display: block;
+}
+footer#rodape nav#redes li{
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+}
+footer#rodape nav#redes img{
+    width: 50px;
+    height: 50px;
+    transition: filter .5s;
+}
+footer#rodape nav#redes li img:hover{
+    filter: contrast(20%) brightness(150%);
+}
+footer#rodape div.rodapefinal{
+    position: absolute;
+    top: 1100px;
+}
+/*termina configuraçao do rodape(footer)*/
