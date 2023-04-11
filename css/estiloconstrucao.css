@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+section#unica{
+    width: 100%;
+    height: 780px;
+}
+
+section#unica div.divisaofigura{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+section#unica div.divisaofigura figure.fotoerro{
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+}
+
+section#unica div.divisaofigura figure.fotoerro img{
+    width: 100%;
+    height: 100%;
+}
+
+footer#rodape nav#redes ol{
+    position: absolute;
+    top: 1150px;
+    left: 950px;
+}
+
+footer#rodape div.rodapefinal{
+    position: absolute;
+    top: 1150px;
+}
